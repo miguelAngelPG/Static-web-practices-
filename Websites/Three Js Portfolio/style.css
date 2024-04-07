@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+html, body{
+    background-color: whitesmoke;
+}
+
+canvas{
+    position: absolute;
+    z-index: -2;
+}
+
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    height: 60%;
+    width: 80%;
+}
+
+span{
+    position: relative;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 10vh;
+}
+
+span:hover{
+    opacity: 1 !important;
+    mix-blend-mode: difference;
+    color: white;
+}
+
+h1{
+    font-size: 8vh;
+}
+
+
+
