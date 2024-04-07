@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonial Section</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" >
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nam doloribus sed perspiciatis placeat illo aperiam at. 
+                            Assumenda, ab dolor? Voluptates, dolorum placeat! Vero 
+                            molestiae incidunt sunt enim laborum sapiente dolorum?</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="dahiana-waszaj-XQWfro4LrVs-unsplash.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nam doloribus sed perspiciatis placeat illo aperiam at. 
+                            Assumenda, ab dolor? Voluptates, dolorum placeat! Vero 
+                            molestiae incidunt sunt enim laborum sapiente dolorum?</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="ben-parker-OhKElOkQ3RE-unsplash.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br><span>Gamer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nam doloribus sed perspiciatis placeat illo aperiam at. 
+                            Assumenda, ab dolor? Voluptates, dolorum placeat! Vero 
+                            molestiae incidunt sunt enim laborum sapiente dolorum?</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br><span>Teacher</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nam doloribus sed perspiciatis placeat illo aperiam at. 
+                            Assumenda, ab dolor? Voluptates, dolorum placeat! Vero 
+                            molestiae incidunt sunt enim laborum sapiente dolorum?</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br><span>Creative Developer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script >
+        var swiper = new Swiper('.swiper', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 3,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          },
+          loop: true
+        });
+      </script>
+</body>
+</html>

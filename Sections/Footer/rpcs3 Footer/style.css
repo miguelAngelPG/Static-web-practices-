@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Spline+Sans:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    /* min-height: 100vh; */
+    background-color: #333;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer{
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 20px 100px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(-135deg,rgb(10, 57, 158) 25%,rgb(91, 10, 196) 100%);
+    color: #fff;
+    bottom: 0;
+}
+
+footer .footer__menu{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .footer__menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer__menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+}
+
+footer .footer__menu ul .title{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer hr{
+    width: 100%;
+    opacity: .2;
+}
+
+footer .footer__info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer__info .footer__name{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .footer__waves{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+footer .wave{
+    width: 6144px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url('wavebar.svg') repeat-x;
+}
+
+footer .wave#wave1{
+    animation: 18s cubic-bezier(.4,.2,.2,.2) -.124s infinite normal none running animateWave,18s ease -1.24s infinite normal none running swell;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    transform:translate3d(0, 0, 0);
+    animation: 11s cubic-bezier(.4,.2,.2,.2) -.124s infinite normal none running animateWave,11s ease -1.24s infinite normal none running swell;
+}
+
+@media (max-width: 700px) {
+
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    footer{
+        padding: 0;
+    }
+}
+
+
+@keyframes animateWave{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
