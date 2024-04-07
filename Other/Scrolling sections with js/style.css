@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+.buttons{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+section:nth-child(1){
+    background: rgb(255, 0, 0);
+}
+
+section:nth-child(2){
+    background: rgb(41, 63, 68);
+}
+
+section:nth-child(3){
+    background: rgb(0, 26, 255);
+}
+
+section:nth-child(4){
+    background: rgb(132, 0, 255);
+}
+
+section:nth-child(5){
+    background: rgb(255, 0, 255);
+}
+
+section:nth-child(6){
+    background: rgb(72, 255, 0);
+}
+
+section:nth-child(7){
+    background: rgb(255, 187, 0);
+}
+
+section:nth-child(8){
+    background: rgb(0, 195, 255);
+}
+
+section:nth-child(9){
+    background: rgb(0, 255, 0);
+}
+
+section:nth-child(10){
+    background: rgb(255, 0, 76);
+}
