@@ -1,0 +1,46 @@
+html {
+    cursor: none;
+    background: rgb(0, 0, 0);
+}
+
+#follower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#follower #circle1 {
+    position: absolute;
+    animation: pulse 4s infinite; 
+    background: #fff;
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+
+@keyframes pulse {
+    0% {
+      opacity: 0.2;
+      height: .5em;
+      width: .5em;
+      margin-top: -0.5em;
+      margin-left: -0.5em;
+    }
+    50% {
+      opacity: 0.9;
+      height: 1em;
+      width: 1em;
+      margin-top: -1.5em;
+      margin-left: -1.5em;
+    }
+    100% {
+      opacity: 0.2;
+      height: .5em;
+      width: .5em;
+      margin-top: -0.5em;
+      margin-left: -0.5em;
+    }
+}
+  
