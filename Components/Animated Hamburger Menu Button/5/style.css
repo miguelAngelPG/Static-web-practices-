@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.hamburger > .line{
+    display: block; 
+    width: 30px;   
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+}
+
+.hamburger > .line:not(:last-child){
+    margin-bottom: 7px;
+}
+
+.hamburger, .hamburger > .line{
+    transition: all .2s ease-in-out;
+}
+
+.hamburger.active{
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2){
+    width: 0;
+}
+
+.hamburger.active .line:nth-child(1), .hamburger.active .line:nth-child(3){ 
+    transition-delay: .4s;
+}
+
+.hamburger.active .line:nth-child(1){ 
+    transform: translateY(10px);
+}
+
+.hamburger.active .line:nth-child(3){ 
+    transform: translateY(-10px) rotate(90deg);
+}
