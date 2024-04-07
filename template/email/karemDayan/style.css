@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(145deg, #6ABAC2, #fff);
+    color: #000;
+    padding: 0 50px;
+}
+
+header{
+    padding-top: 50px;
+    max-height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+header img{
+    position: relative;
+    height: 100%;
+    max-height: 100px;
+}
+
+section{
+    gap: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+p{
+    text-align: justify;
+    font-size: 25px;
+}
+
+.subtitle{
+    font-size: 15px;
+}
+
+footer{
+    display: flex; 
+    justify-content: end; 
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+}
+
+footer a:hover img{
+    filter: invert(0%) sepia(0%) saturate(7489%) hue-rotate(297deg) brightness(96%) contrast(104%);
+}
+
+.whatsapp{
+    filter: invert(34%) sepia(84%) saturate(596%) hue-rotate(307deg) brightness(98%) contrast(101%);
+}
+
+.instagram{
+    filter: invert(95%) sepia(44%) saturate(2543%) hue-rotate(321deg) brightness(93%) contrast(94%);
+}
+
+.facebook{
+    filter: invert(89%) sepia(35%) saturate(573%) hue-rotate(10deg) brightness(88%) contrast(92%);
+}
+
+.pagina{
+    filter: invert(77%) sepia(47%) saturate(2008%) hue-rotate(331deg) brightness(91%) contrast(94%);
+}
